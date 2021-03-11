@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-11T02:59:37 EET" name="Suite" finished-at="2021-03-11T03:00:47 EET" duration-ms="70330">
+    <groups>
+    </groups>
+    <test started-at="2021-03-11T02:59:37 EET" name="Test" finished-at="2021-03-11T03:00:47 EET" duration-ms="70330">
+      <class name="Registration_Cart_Checkout.cart">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Registration_Cart_Checkout.cart@18d87d80]" started-at="2021-03-11T03:00:19 EET" name="beforeClass" finished-at="2021-03-11T03:00:35 EET" duration-ms="16362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Additems()[pri:0, instance:Registration_Cart_Checkout.cart@18d87d80]" started-at="2021-03-11T03:00:35 EET" name="Additems" finished-at="2021-03-11T03:00:47 EET" duration-ms="11641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Additems -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Registration_Cart_Checkout.cart@18d87d80]" started-at="2021-03-11T03:00:47 EET" name="afterClass" finished-at="2021-03-11T03:00:47 EET" duration-ms="656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- Registration_Cart_Checkout.cart -->
+      <class name="Registration_Login.login">
+        <test-method is-config="true" signature="BeforeTestcases()[pri:0, instance:Registration_Login.login@1af2d44a]" started-at="2021-03-11T02:59:37 EET" name="BeforeTestcases" finished-at="2021-03-11T02:59:46 EET" duration-ms="8485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTestcases -->
+        <test-method signature="Signbtn_Check()[pri:1, instance:Registration_Login.login@1af2d44a]" started-at="2021-03-11T02:59:46 EET" name="Signbtn_Check" finished-at="2021-03-11T02:59:48 EET" duration-ms="1914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Signbtn_Check -->
+        <test-method signature="Account_Registration()[pri:2, instance:Registration_Login.login@1af2d44a]" started-at="2021-03-11T02:59:48 EET" name="Account_Registration" finished-at="2021-03-11T03:00:18 EET" duration-ms="30587" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for url to be "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation". Current url: "http://automationpractice.com/index.php?controller=authentication&back=my-account" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'ESSAM93', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017ecaa494d0bb5d8b03f91417d2156]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be "http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation". Current url: "http://automationpractice.com/index.php?controller=authentication&back=my-account" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'ESSAM93', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54601}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9017ecaa494d0bb5d8b03f91417d2156
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+at Registration_Login.login.Account_Registration(login.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Account_Registration -->
+        <test-method is-config="true" signature="AfterTestcases()[pri:0, instance:Registration_Login.login@1af2d44a]" started-at="2021-03-11T03:00:18 EET" name="AfterTestcases" finished-at="2021-03-11T03:00:19 EET" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTestcases -->
+      </class> <!-- Registration_Login.login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
